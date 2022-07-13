@@ -133,5 +133,8 @@
         "nativeOTA": {
             "enabled": false
         }
-    }
+    },
+    "appVersion": "9.0.0",
+    "buildNumber": 9,
+    "runtimeUrl": "https://pnl-moas-export-scan-test.mendixcloud.com"
 }
