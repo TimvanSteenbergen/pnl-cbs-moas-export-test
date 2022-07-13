@@ -134,7 +134,7 @@
             "enabled": false
         }
     },
-    "appVersion": "9.0.0",
-    "buildNumber": 9,
+    "appVersion": "9.10.0",
+    "buildNumber": 10,
     "runtimeUrl": "https://pnl-moas-export-scan-test.mendixcloud.com"
 }
