@@ -1,12 +1,5 @@
 require "json"
 
-XCODE_VERSION = ""
-begin
-  XCODE_VERSION << (%x[xcrun xcodebuild -version | head -1 | awk '{print $2}']).to_s.strip
-rescue RuntimeError
-  Pod::UI.warn "We could not derive your Xcode version. Verify if you have xcode command line tools installed on your machine. See https://developer.apple.com/library/archive/technotes/tn2339/_index.html"
-end
-
 def generate_pod_dependencies
   resolved_pods = {}
 
@@ -91,7 +84,7 @@ end
 def mendix_app_delegate_template
   %(// DO NOT EDIT BY HAND. THIS FILE IS AUTO-GENERATED
 #import <Foundation/Foundation.h>
-#import "MendixNative/MendixNative.h"
+#import <MendixNative.h>
 #import "MendixAppDelegate.h"
 {{ imports }}
 
